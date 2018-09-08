@@ -91,13 +91,15 @@ A decision was made during development of the algorithm that only time stamps fr
 
 At the time of writing Version 1.0 of the white paper, the performance of the algorithm has been evaluated on a test network. Results are documented below, and will be updated in a future version of the white paper after the main network has been running for some time, which will be the true test of the algorithm performance.
 
-Average block time at constant hash rate: 14.5 seconds (this figure is rounded up to 15 for simplicity under the Blockchain Specification section below).
+Average block time: 14.5 seconds measured over 150,000 blocks at varying hash rate (this figure is rounded up to 15 for simplicity under the Blockchain Specification section below).
+
+Block time variance: Minimum 1 second, maximum 173 seconds, at constant hash rate measured over 100,000 blocks. 
 
 Typical number of blocks required to adjust difficulty to bring block time back on target:
 - 4 fold change in hash rate: 125 blocks
 - 250 fold change in hash rate: 250 blocks
 
-Typical average measured variance in difficulty at constant hash rate: +50%/-30%. As anticipated, this is significantly higher than Ethereum, which has a measured variance of approximately +7%/-5% using the Byzantium algorithm. The higher variance is a byproduct of rapid response time.
+Average variance in difficulty: +50%/-30% at a constant hash rate. As anticipated, this is significantly higher than Ethereum, which has a measured variance of approximately +7%/-5% using the Byzantium algorithm. The higher variance is a byproduct of rapid response time.
 
 #### Algorithm Security Considerations
 
